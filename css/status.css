@@ -1,0 +1,17 @@
+.l-status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 22px 0 25px;
+}
+
+.l-status .l-status__bitmap {
+  height: 143px;
+  width: 143px;
+  background-color: cornflowerblue;
+}
+
+.l-status .l-status__content {
+  padding-left: 25px;
+}
+/*# sourceMappingURL=status.css.map */

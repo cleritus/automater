@@ -1,0 +1,25 @@
+.c-message {
+  border: 2px solid #E9EDED;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  &__head {
+    font-size: 0.86rem;
+    line-height: 1.42;
+    margin-bottom: 15px;
+  }
+
+  &__content {
+    margin-bottom: 10px;
+  }
+
+  &__attachments {
+    color: $primaryColor;
+    font-size: 0.86rem;
+    line-height: 1.42;
+    margin-bottom: 15px;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
+  }
+}

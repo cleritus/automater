@@ -1,0 +1,143 @@
+form{
+  .form-input-mail {	
+    height: 50px;	
+    width: 510px;	
+    padding: 0 20px;
+    margin-bottom: 10px;
+    border: 1px solid #E9EDED;	
+    border-radius: 3px;	
+    background-color: #FFFFFF;	
+    box-shadow: inset 0 0 6px 0 #DADADA;
+  }  
+  
+   p{
+      font-size: 16px;
+    }
+    
+   span{
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+  .payment-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .payment-btn-container input {
+      // position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0;
+
+      &:hover ~ .checkmark{
+        border: 2px solid #2A9FD2;	
+      }
+      
+      &:checked ~ .checkmark{
+        border: 2px solid #2A9FD2;
+        background-color: rgba(42,159,210,0.1);
+      }
+    }
+
+    .checkmark {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 100px;
+      width: 265px;	
+      border: 2px solid #E9EDEE;
+      border-radius: 5px;	
+      cursor: pointer;
+
+      span{
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }  
+  }
+  
+
+  button.form-submit-btn{
+    height: 50px;
+    width: 550px;
+    border: 0;
+    border-radius: 3px;
+    background-color: $primaryColor;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: $whiteColor;
+    margin-top: 25px;
+    text-transform: uppercase;
+  }
+}
+  
+
+
+ 
+  
+  
+
+
+
+// .l-form {
+//   &__attachments {
+//     list-style-position: inside;
+//     margin: 0;
+//     padding: 0;
+//     @media screen and (max-width: $maxMobile) {
+//       margin-bottom: 15px;
+//     }
+
+//     strong, li {
+//       margin-bottom: 4px;
+//     }
+
+//     strong {
+//       display: block;
+//     }
+
+//     button {
+//       background: url('../img/remove-button.svg') no-repeat;
+//       width: 15px;
+//       height: 15px;
+//       padding: 0;
+//       margin: 0 0 0 5px;
+//       border: 0;
+//       outline: 0;
+//       cursor: pointer;
+//       vertical-align: middle;
+//     }
+//   }
+
+//   &__bottom {
+//     @media screen and (min-width: $minTablet) {
+//       display: flex;
+//       align-items: flex-start;
+//       justify-content: space-between;
+//     }
+//   }
+
+//   &__buttons {
+//     @media screen and (max-width: $maxMobile) {
+//       flex: 0 0 100%;
+//     }
+
+//     @media screen and (min-width: $minTablet) {
+//       display: flex;
+//       align-items: center;
+//       .c-upload-field {
+//         margin-right: 15px;
+//       }
+//     }
+
+//     @media screen and (max-width: $maxMobile) {
+//       .c-button, .c-upload-field {
+//         display: block;
+//         width: 100%;
+//         margin-bottom: 5px;
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,51 @@
+.l-status {
+  display: flex;
+  padding: 22px 0 ;
+  
+  &__bitmap{	
+    height: 143px;	
+    width: 143px;
+    background-color: $primaryColor;
+  }
+
+  &__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 25px;
+  }
+
+  &__rating{
+    .counter-rating{
+      font-size: .86rem;
+      font-weight: normal; 
+    }  
+  }
+
+  &__price span{
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+
+  &__quantity{
+    display: flex;
+    align-items: center;
+    span{
+      font-weight: bold;
+    }
+    .counter-quantity{
+      font-size: 1.15rem;
+    }
+    button{
+      margin: 0 10px;
+      font-size: 1.6rem;
+      // font-weight: bold;
+      height: 30px;	
+      width: 30px;	
+      border: none;
+      border-radius: 2.16px;	
+      background-color: #E9EDEE;
+      line-height: 30px;
+    }
+  }
+}

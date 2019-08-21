@@ -1,0 +1,44 @@
+.c-code-field {
+  width: 100%;
+  box-sizing: border-box;
+  @media screen and (min-width: $minTablet) {
+    background: #FAFAFA;
+    border: 2px solid #E9EDEE;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    background: transparent;
+    font-size: 1.15rem;
+    line-height: 1.19;
+    font-weight: 700;
+    padding: 18px 20px;
+    border: 0;
+    outline: 0;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    @media screen and (max-width: $maxMobile) {
+      background: #FAFAFA;
+      font-size: 13px;
+      width: 100%;
+      margin-bottom: 5px;
+      padding: 10px;
+      border-radius: 3px;
+      border: 2px solid #E9EDEE;
+    }
+  }
+
+  .c-button {
+    font-size: 1.15rem;
+    line-height: 1.19;
+    padding: 0.53em 0.9em;
+    margin: 10px 10px 10px 0;
+    @media screen and (max-width: $maxMobile) {
+      display: block;
+      margin: 0;
+      width: 100%;
+    }
+  }
+}

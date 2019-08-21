@@ -1,0 +1,16 @@
+.c-upload-field {
+  position: relative;
+  overflow: hidden;
+}
+
+.c-upload-field__file {
+  width: 250%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+/*# sourceMappingURL=upload-field.css.map */

@@ -1,0 +1,17 @@
+.l-header {
+  background: #fff;
+  box-shadow: 0 0 6px 0 rgba(189,189,189,0.5);
+  flex: 0 0 auto;
+  .l-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 96px;
+    @media screen and (max-width: $maxMobile) {
+      height: 48px;
+      img {
+        max-height: 100%;
+      }
+    }
+  }
+}

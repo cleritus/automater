@@ -1,0 +1,76 @@
+.l-main {
+  flex: 1 1 auto;
+  padding: 32px 0;
+
+  .l-content {
+    max-width: 928px;
+    @media screen and (max-width: $maxMobile) {
+      padding: 0;
+    }
+  }
+
+  &__head {
+    @media screen and (max-width: $maxTablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__box {
+    background: #fff;
+    padding: 2.8rem;
+    border-radius: 3px;
+    margin-bottom: 16px;
+    box-shadow: 0 0 4px 0 rgba(218,218,218,0.5);
+    @media screen and (max-width: $maxMobile) {
+      padding: 15px;
+    }
+
+    @media screen and (min-width: $minTablet) and (max-width: $maxTablet) {
+      padding: 2.8rem 5.72rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.sidebar {
+      @media screen and (min-width: $minDesktop) {
+        display: flex;
+      }
+    }
+
+    &.info {
+      h3 {
+        @media screen and (max-width: $maxTablet) {
+          text-align: center;
+        }
+      }
+
+      p {
+        @media screen and (max-width: $maxMobile) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &__content {
+    @media screen and (min-width: $minDesktop) {
+      flex: 1 1 auto;
+      padding-right: 2.8rem;
+      border-right: 2px solid #E9EDEE;
+    }
+  }
+
+  &__complaint {
+    color: $grayColor;
+    @media screen and (max-width: $maxTablet) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  
+}

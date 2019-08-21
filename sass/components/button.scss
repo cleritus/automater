@@ -1,0 +1,64 @@
+.c-button {
+  background: $primaryColor;
+  color: #fff;
+  font-size: 1.15rem;
+  line-height: 1.19;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  padding: 0.65em 1em;
+  border-radius: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.block {
+    display: block;
+    width: 100%;
+  }
+
+  &.secondary {
+    background: #fff;
+    color: $darkGrayColor;
+    padding: 0.56em 1em;
+    border: 2px solid #E9EDEE;
+  }
+
+  &.contact {
+    font-size: 1rem;
+    line-height: 1.357;
+    padding: 0.65em 1em;
+    display: inline-flex;
+    align-items: center;
+    &:before {
+      content: '';
+      display: block;
+      background: url('../img/button-contact.svg') no-repeat;
+      width: 15px;
+      height: 15px;
+      margin-right: 1em;
+    }
+  }
+
+  &.file {
+    padding: 1.09em 1em;
+    &:before {
+      content: '';
+      display: inline-block;
+      background: url('../img/button-download.svg') no-repeat;
+      width: 23px;
+      height: 21px;
+      vertical-align: bottom;
+      margin-right: 1em;
+    }
+
+    &.small {
+      padding: 0.5em 0.5em;
+    }
+  }
+}
